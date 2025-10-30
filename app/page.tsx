@@ -123,7 +123,7 @@ export default function IDToPDF() {
           {[{ label: "Front", value: front, side: "front" }, { label: "Back", value: back, side: "back" }].map((item) => (
             <label
               key={item.side}
-              className="flex flex-col items-center gap-2 p-3 border rounded-lg cursor-pointer hover:bg-gray-50 transition"
+              className="flex flex-col items-center gap-2 p-3 border  rounded-lg cursor-pointer hover:bg-gray-50 transition"
             >
               <span className="text-sm font-medium">{item.label} Side</span>
               <div className="w-48 h-28 sm:w-56 sm:h-32 bg-gray-100 rounded overflow-hidden flex items-center justify-center">
@@ -166,7 +166,7 @@ export default function IDToPDF() {
               setFront(null);
               setBack(null);
             }}
-            className="flex-1 sm:flex-none px-4 py-2 border rounded-md"
+            className="flex-1 sm:flex-none px-4 py-2 border rounded-md text-gray-800"
           >
             Reset
           </button>
@@ -191,10 +191,10 @@ export default function IDToPDF() {
                 src={front}
                 alt="front"
                 style={{
-                  width: "70%",
-                  height: "400px",
+                  width: "60%",
+                  height: "350px",
                   objectFit: "contain",
-                  marginBottom: "10mm",
+                  marginBottom: "40mm",
                 }}
               />
             )}
@@ -203,8 +203,8 @@ export default function IDToPDF() {
                 src={back}
                 alt="back"
                 style={{
-                  width: "70%",
-                  height: "400px",
+                  width: "60%",
+                  height: "350px",
                   objectFit: "contain",
                 }}
               />
